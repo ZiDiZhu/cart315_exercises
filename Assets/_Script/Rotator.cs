@@ -12,4 +12,12 @@ public class Rotator : MonoBehaviour
     {
         GetComponent<Transform>().Rotate(rotX, rotY, rotZ);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("R");
+        }
+    }
 }
